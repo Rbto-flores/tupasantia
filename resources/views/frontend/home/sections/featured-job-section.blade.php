@@ -67,7 +67,7 @@
                                 @endif
                                 <a href="{{ route('jobs.show', $job->slug) }}">
                                     <div class="btn btn-apply-now">
-                                        View Post</div>
+                                        Ver oferta</div>
                                 </a>
                             </div>
                         </div>
