@@ -19,7 +19,7 @@
 
 <section class="section-box-2">
   <div class="container">
-    <div class="banner-hero banner-image-single"><img style="height: 300px;object-fit: cover;" src="{{ asset($job->company->banner) }}" alt="joblist">
+    <div class="banner-hero banner-image-single"><img style="height: 300px;object-fit: cover;" src="{{ asset($job->company->banner) }}" alt="tupasantia">
     </div>
     <div class="row mt-10">
       <div class="col-lg-8 col-md-12">
@@ -50,7 +50,7 @@
           <h5 class="border-bottom pb-15 mb-30">Información de la vacante</h5>
           <div class="row">
             <div class="col-md-6 d-flex">
-              <div class="sidebar-icon-item"><img src="{{ asset('frontend/assets/imgs/page/job-single/industry.svg') }}" alt="joblist">
+              <div class="sidebar-icon-item"><img src="{{ asset('frontend/assets/imgs/page/job-single/industry.svg') }}" alt="tupasantia">
               </div>
               <div class="sidebar-text-info ml-10"><span
                   class="text-description industry-icon mb-10">Categoria</span><strong class="small-heading">
@@ -59,7 +59,7 @@
           </div>
           <div class="row mt-25">
             <div class="col-md-6 d-flex mt-sm-15">
-              <div class="sidebar-icon-item"><img src="{{ asset('frontend/assets/imgs/page/job-single/salary.svg') }}" alt="joblist"></div>
+              <div class="sidebar-icon-item"><img src="{{ asset('frontend/assets/imgs/page/job-single/salary.svg') }}" alt="tupasantia"></div>
               <div class="sidebar-text-info ml-10"><span
                   class="text-description salary-icon mb-10">Rango Salarial</span><strong class="small-heading">
                   @if ($job->salary_mode === 'range')
@@ -73,12 +73,12 @@
           </div>
           <div class="row mt-25">
             <div class="col-md-6 d-flex mt-sm-15">
-              <div class="sidebar-icon-item"><img src="{{ asset('frontend/assets/imgs/page/job-single/job-type.svg') }}" alt="joblist">
+              <div class="sidebar-icon-item"><img src="{{ asset('frontend/assets/imgs/page/job-single/job-type.svg') }}" alt="tupasantia">
               </div>
               <div class="sidebar-text-info ml-10"><span class="text-description jobtype-icon mb-10"> Tipo </span><strong class="small-heading">{{ $job->jobType->name }}</strong></div>
             </div>
             <div class="col-md-6 d-flex mt-sm-15">
-              <div class="sidebar-icon-item"><img src="{{ asset('frontend/assets/imgs/page/job-single/deadline.svg') }}" alt="joblist">
+              <div class="sidebar-icon-item"><img src="{{ asset('frontend/assets/imgs/page/job-single/deadline.svg') }}" alt="tupasantia">
               </div>
               <div class="sidebar-text-info ml-10"><span class="text-description mb-10">Fecha limite</span><strong
                   class="small-heading">{{ formatDate($job->deadline) }}</strong></div>
@@ -86,13 +86,13 @@
           </div>
           <div class="row mt-25">
             <div class="col-md-6 d-flex mt-sm-15">
-              <div class="sidebar-icon-item"><img src="{{ asset('frontend/assets/imgs/page/job-single/updated.svg') }}" alt="joblist"></div>
+              <div class="sidebar-icon-item"><img src="{{ asset('frontend/assets/imgs/page/job-single/updated.svg') }}" alt="tupasantia"></div>
               <div class="sidebar-text-info ml-10"><span
                   class="text-description jobtype-icon mb-10">Educación</span><strong
                   class="small-heading">{{ $job->jobEduction?->name }}</strong></div>
             </div>
             <div class="col-md-6 d-flex mt-sm-15">
-              <div class="sidebar-icon-item"><img src="{{ asset('frontend/assets/imgs/page/job-single/location.svg') }}" alt="joblist">
+              <div class="sidebar-icon-item"><img src="{{ asset('frontend/assets/imgs/page/job-single/location.svg') }}" alt="tupasantia">
               </div>
               <div class="sidebar-text-info ml-10"><span class="text-description mb-10">Ubicación</span><strong
                   class="small-heading">{{ formatLocation(
@@ -114,10 +114,10 @@
                 href="#">Guardar para despues</a></div>
             <div class="col-md-7 text-lg-end social-share">
               <h6 class="color-text-paragraph-2 d-inline-block d-baseline mr-10">Share this</h6>
-              <a data-social="facebook" class="mr-5 d-inline-block d-middle" href="#"><img alt="joblist" src="{{ asset('frontend/assets/imgs/template/icons/share-fb.svg') }}"></a>
-              <a data-social="twitter" class="mr-5 d-inline-block d-middle" href="#"><img alt="joblist" src="{{ asset('frontend/assets/imgs/template/icons/share-tw.svg') }}"></a>
-              <a data-social="reddit" class="mr-5 d-inline-block d-middle" href="#"><img alt="joblist" src="{{asset('frontend/assets/imgs/template/icons/share-red.svg')}}"></a>
-              <a data-social="linkedin" class="d-inline-block d-middle" href="#"><img alt="joblist" src="{{ asset('frontend/assets/imgs/template/icons/share-in.svg') }}"></a>
+              <a data-social="facebook" class="mr-5 d-inline-block d-middle" href="#"><img alt="tupasantia" src="{{ asset('frontend/assets/imgs/template/icons/share-fb.svg') }}"></a>
+              <a data-social="twitter" class="mr-5 d-inline-block d-middle" href="#"><img alt="tupasantia" src="{{ asset('frontend/assets/imgs/template/icons/share-tw.svg') }}"></a>
+              <a data-social="reddit" class="mr-5 d-inline-block d-middle" href="#"><img alt="tupasantia" src="{{asset('frontend/assets/imgs/template/icons/share-red.svg')}}"></a>
+              <a data-social="linkedin" class="d-inline-block d-middle" href="#"><img alt="tupasantia" src="{{ asset('frontend/assets/imgs/template/icons/share-in.svg') }}"></a>
             </div>
           </div>
         </div>
@@ -126,7 +126,7 @@
         <div class="sidebar-border">
           <div class="sidebar-heading">
             <div class="avatar-sidebar">
-              <figure><img alt="joblist" src="{{ asset($job->company->logo) }}"></figure>
+              <figure><img alt="tupasantia" src="{{ asset($job->company->logo) }}"></figure>
               <div class="sidebar-info"><span class="sidebar-company">{{ $job->company->name }}</span><span
                   class="card-location">{{ formatLocation($job->company->companyCountry->name, $job->company->companyState->name) }}</span>
                 @if ($openJobs > 0)

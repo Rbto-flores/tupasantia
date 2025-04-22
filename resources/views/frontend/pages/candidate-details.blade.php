@@ -19,7 +19,7 @@
 
 <section class="section-box-2">
   <div class="container">
-    <div class="banner-hero banner-image-single"><img style="width: 150px;height: 150px;object-fit: cover;border-radius: 50%;" src="{{ asset($candidate->image) }}" alt="joblist"></div>
+    <div class="banner-hero banner-image-single"><img style="width: 150px;height: 150px;object-fit: cover;border-radius: 50%;" src="{{ asset($candidate->image) }}" alt="tupasantia"></div>
     <div class="box-company-profile">
       <div class="row mt-10">
         <div class="col-lg-8 col-md-12">

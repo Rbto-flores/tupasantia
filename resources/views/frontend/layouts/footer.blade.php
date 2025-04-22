@@ -36,7 +36,7 @@
 
             <div class="footer-col-1 col-md-3 col-sm-12">
                 <a class="footer_logo" href="index.html">
-                    <img alt="joblist" src="{{ $footerDetails?->logo }}">
+                    <img alt="tupasantia" src="{{ $footerDetails?->logo }}">
                 </a>
                 <div class="mt-20 mb-20 font-xs color-text-paragraph-2">{{ $footerDetails?->details }}</div>
                 <div class="footer-social">

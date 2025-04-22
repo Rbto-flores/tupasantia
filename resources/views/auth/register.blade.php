@@ -97,7 +97,7 @@
           {{-- <div class="text-center mt-20">
               <div class="divider-text-center"><span>Or continue with</span></div>
               <button class="btn social-login hover-up mt-20"><img src="assets/imgs/template/icons/icon-google.svg"
-                  alt="joblist"><strong>Sign up with Google</strong></button>
+                  alt="tupasantia"><strong>Sign up with Google</strong></button>
             </div> --}}
         </div>
       </div>
