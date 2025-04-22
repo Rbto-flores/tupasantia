@@ -2,7 +2,7 @@
   <div class="container">
     <div class="main-header">
       <div class="header-left">
-        <div class="header-logo"><a class="d-flex" href="{{ url('/') }}"><img alt="joblist"
+        <div class="header-logo"><a class="d-flex" href="{{ url('/') }}"><img alt="tupasantia"
               src="{{ config('settings.site_logo') }}"></a></div>
       </div>
       <div class="header-nav">

@@ -36,7 +36,7 @@
                             <div class="card-grid-2 hover-up">
                                 <div class="card-grid-2-image-left"><span class="flash"></span>
                                     <div class="image-box"><img src="{{ asset($job->company?->logo) }}"
-                                            alt="joblist"></div>
+                                            alt="tupasantia"></div>
 
                                 </div>
                                 <div class="card-block-info">

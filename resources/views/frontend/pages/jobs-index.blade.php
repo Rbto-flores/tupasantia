@@ -31,7 +31,7 @@
                                     <div class="col-lg-6 col-md-6 col-sm-12">
                                         <div class="card-grid-2-image-left">
                                             <div class="image-box"><img src="{{ asset($job->company->logo) }}"
-                                                    alt="joblist"></div>
+                                                    alt="tupasantia"></div>
                                             <div class="right-info"><a class="name-job"
                                                     href="{{ route('companies.show', $job->company->slug) }}">{{ $job->company->name }}</a><span
                                                     class="location-small">{{ formatLocation($job->company->companyCountry->name, $job->company?->companyState?->name) }}</span>

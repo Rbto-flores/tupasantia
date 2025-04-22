@@ -14,7 +14,7 @@
             <div class="swiper-slide">
               <div class="card-grid-3 hover-up wow animate__animated animate__fadeIn">
                 <div class="text-center card-grid-3-image"><a href="{{ route('blogs.show', $blog->slug) }}">
-                    <figure><img alt="joblist" src="{{ asset($blog->image) }}"></figure>
+                    <figure><img alt="tupasantia" src="{{ asset($blog->image) }}"></figure>
                   </a></div>
                 <div class="card-block-info">
                   <h5><a href="{{ route('blogs.show', $blog->slug) }}">{{ $blog->title }}</a></h5>

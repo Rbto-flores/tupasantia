@@ -13,7 +13,7 @@
             <div class="swiper-slide hover-up">
               <div class="card-review-1">
                 <div class="image-review">
-                  <img src="{{ asset($review->image) }}" alt="joblist">
+                  <img src="{{ asset($review->image) }}" alt="tupasantia">
                   <div class="review-name">
                     <h5>{{ $review->name }}</h5><span class="font-xs">{{ $review->title }}</span>
                   </div>
@@ -22,7 +22,7 @@
                   <div class="review-comment">{{ $review->review }}</div>
                   <div class="review-rating">
                     @for ($i = 1; $i <= $review->rating; $i++)
-                      <img src="{{ asset('frontend/assets/imgs/template/icons/star.svg') }}" alt="joblist">
+                      <img src="{{ asset('frontend/assets/imgs/template/icons/star.svg') }}" alt="tupasantia">
                       @endfor
                   </div>
 

@@ -38,7 +38,7 @@
           </div>
           <div class="col-xl-4 col-lg-12 d-none d-xl-block col-md-6">
             <div class="mt-40">
-              <div class="block-1"><img class="img-responsive" alt="joblist"
+              <div class="block-1"><img class="img-responsive" alt="tupasantia"
                   src="{{ asset($hero?->image) }}"></div>
             </div>
           </div>
