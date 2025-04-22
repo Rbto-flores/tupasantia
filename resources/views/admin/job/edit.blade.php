@@ -17,7 +17,7 @@
                     @method('PUT')
                     <div class="card">
                         <div class="card-header">
-                            Job Details
+                            Detalles de la vacante
                         </div>
                         <div class="card-body">
                             <div class="row">
