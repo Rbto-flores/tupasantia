@@ -7,10 +7,11 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: production 
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          fetch-depth: 2
           
       - name: Setup SSH
         uses: webfactory/ssh-agent@v0.8.0
@@ -24,4 +25,19 @@ jobs:
           
       - name: Deploy to VPS
         run: |
-          ssh ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} "cd /var/www/tupasantia && git pull origin main && composer install --no-dev && php artisan optimize && php artisan cache:clear"
+            CHANGED=$(git diff --name-only HEAD^ HEAD | grep -E 'composer\.json|composer\.lock' || true)
+
+            ssh ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
+              cd /var/www/tupasantia
+              git pull origin main
+
+              if [[ ! -z "$CHANGED" ]]; then
+                echo "composer.json or composer.lock changed. Running composer install..."
+                composer install --no-dev
+              else
+                echo "No composer changes, skipping install."
+              fi
+
+              php artisan optimize
+              php artisan cache:clear
+            EOF

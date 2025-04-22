@@ -47,26 +47,21 @@
     <div class="row">
       <div class="col-lg-8 col-md-12 col-sm-12 col-12">
         <div class="job-overview">
-          <h5 class="border-bottom pb-15 mb-30">Employment Information</h5>
+          <h5 class="border-bottom pb-15 mb-30">Información de la vacante</h5>
           <div class="row">
             <div class="col-md-6 d-flex">
               <div class="sidebar-icon-item"><img src="{{ asset('frontend/assets/imgs/page/job-single/industry.svg') }}" alt="joblist">
               </div>
               <div class="sidebar-text-info ml-10"><span
-                  class="text-description industry-icon mb-10">Category</span><strong class="small-heading">
+                  class="text-description industry-icon mb-10">Categoria</span><strong class="small-heading">
                   {{ $job->category->name }}</strong></div>
-            </div>
-            <div class="col-md-6 d-flex mt-sm-15">
-              <div class="sidebar-icon-item"><img src="{{ asset('frontend/assets/imgs/page/job-single/job-level.svg') }}" alt="joblist">
-              </div>
-
             </div>
           </div>
           <div class="row mt-25">
             <div class="col-md-6 d-flex mt-sm-15">
               <div class="sidebar-icon-item"><img src="{{ asset('frontend/assets/imgs/page/job-single/salary.svg') }}" alt="joblist"></div>
               <div class="sidebar-text-info ml-10"><span
-                  class="text-description salary-icon mb-10">Salary</span><strong class="small-heading">
+                  class="text-description salary-icon mb-10">Rango Salarial</span><strong class="small-heading">
                   @if ($job->salary_mode === 'range')
                   {{ $job->min_salary }} - {{ $job->max_salary }} {{ config('settings.site_default_currency') }}
                   @else
@@ -80,13 +75,12 @@
             <div class="col-md-6 d-flex mt-sm-15">
               <div class="sidebar-icon-item"><img src="{{ asset('frontend/assets/imgs/page/job-single/job-type.svg') }}" alt="joblist">
               </div>
-              <div class="sidebar-text-info ml-10"><span class="text-description jobtype-icon mb-10">Job
-                  type</span><strong class="small-heading">{{ $job->jobType->name }}</strong></div>
+              <div class="sidebar-text-info ml-10"><span class="text-description jobtype-icon mb-10"> Tipo </span><strong class="small-heading">{{ $job->jobType->name }}</strong></div>
             </div>
             <div class="col-md-6 d-flex mt-sm-15">
               <div class="sidebar-icon-item"><img src="{{ asset('frontend/assets/imgs/page/job-single/deadline.svg') }}" alt="joblist">
               </div>
-              <div class="sidebar-text-info ml-10"><span class="text-description mb-10">Deadline</span><strong
+              <div class="sidebar-text-info ml-10"><span class="text-description mb-10">Fecha limite</span><strong
                   class="small-heading">{{ formatDate($job->deadline) }}</strong></div>
             </div>
           </div>
@@ -94,13 +88,13 @@
             <div class="col-md-6 d-flex mt-sm-15">
               <div class="sidebar-icon-item"><img src="{{ asset('frontend/assets/imgs/page/job-single/updated.svg') }}" alt="joblist"></div>
               <div class="sidebar-text-info ml-10"><span
-                  class="text-description jobtype-icon mb-10">Education</span><strong
+                  class="text-description jobtype-icon mb-10">Educación</span><strong
                   class="small-heading">{{ $job->jobEduction?->name }}</strong></div>
             </div>
             <div class="col-md-6 d-flex mt-sm-15">
               <div class="sidebar-icon-item"><img src="{{ asset('frontend/assets/imgs/page/job-single/location.svg') }}" alt="joblist">
               </div>
-              <div class="sidebar-text-info ml-10"><span class="text-description mb-10">Location</span><strong
+              <div class="sidebar-text-info ml-10"><span class="text-description mb-10">Ubicación</span><strong
                   class="small-heading">{{ formatLocation(
                         $job->country?->name,
                         $job->state?->name,
@@ -117,7 +111,7 @@
         <div class="single-apply-jobs">
           <div class="row align-items-center">
             <div class="col-md-5"><a class="btn btn-border"
-                href="#">Save job</a></div>
+                href="#">Guardar para despues</a></div>
             <div class="col-md-7 text-lg-end social-share">
               <h6 class="color-text-paragraph-2 d-inline-block d-baseline mr-10">Share this</h6>
               <a data-social="facebook" class="mr-5 d-inline-block d-middle" href="#"><img alt="joblist" src="{{ asset('frontend/assets/imgs/template/icons/share-fb.svg') }}"></a>
@@ -161,7 +155,7 @@
 
         <div class="sidebar-border">
           <div class="sidebar-heading">
-            <h6 class="f-18">Skills</h6>
+            <h6 class="f-18">Habilidades</h6>
           </div>
           <div class="sidebar-list-job">
             @foreach ($job->skills as $jobSkill)
@@ -172,7 +166,7 @@
 
         <div class="sidebar-border">
           <div class="sidebar-heading">
-            <h6 class="f-18">Benefits</h6>
+            <h6 class="f-18">Beneficios</h6>
           </div>
           <div class="sidebar-list-job">
             @foreach ($job->benefits as $jobBenefit)
@@ -183,7 +177,7 @@
 
         <div class="sidebar-border">
           <div class="sidebar-heading">
-            <h6 class="f-18">Tags</h6>
+            <h6 class="f-18">Etiquetas</h6>
           </div>
           <div class="sidebar-list-job">
             @foreach ($job->tags as $jobTag)
