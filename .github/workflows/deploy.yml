@@ -31,7 +31,7 @@ jobs:
               cd /var/www/tupasantia
               git pull origin main
 
-              if [[ ! -z "$CHANGED" ]]; then
+              if [ ! -z "$CHANGED" ]; then
                 echo "composer.json or composer.lock changed. Running composer install..."
                 composer install --no-dev
               else
