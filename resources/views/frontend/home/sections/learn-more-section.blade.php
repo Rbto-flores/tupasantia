@@ -7,9 +7,9 @@
           <div class="mt-40 pr-50 text-md-lh28 wow animate__animated animate__fadeInUp">{{ $learnMore?->sub_title }}</div>
           <div class="mt-40">
             <div class="wow animate__animated animate__fadeInUp"><a class="btn btn-default"
-                href="jobs-grid.html">Search Jobs</a>
+                href="jobs">Buscar Vacantes</a>
               @if ($learnMore?->url)
-              <a class="btn btn-link" href="{{ $learnMore?->url }}">Learn More</a>
+              <a class="btn btn-link" href="{{ $learnMore?->url }}">Saber Mas</a>
               @endif
             </div>
           </div>
