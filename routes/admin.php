@@ -49,6 +49,7 @@ use App\Http\Controllers\Admin\SkillController;
 use App\Http\Controllers\Admin\SocialIconController;
 use App\Http\Controllers\Admin\TagController;
 use App\Http\Controllers\Admin\WhyChooseUsController;
+use App\Http\Controllers\Admin\UserController;
 use App\Models\JobExperience;
 use App\Models\SiteSetting;
 use App\Models\SocialIcon;
@@ -95,6 +96,9 @@ Route::group(['middleware' => ['auth:admin'], 'prefix' => 'admin', 'as' => 'admi
 
     /** Countries Route */
     Route::resource('countries', CountryController::class);
+
+    /** Users Route */
+    Route::resource('users', UserController::class);
 
     /** State Route */
     Route::resource('states', StateController::class);
