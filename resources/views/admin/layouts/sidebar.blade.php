@@ -66,7 +66,9 @@
             @if (canAccess(['job create', 'job update', 'job delete']))
             <li class="{{ setSidebarActive(['admin.jobs.*']) }}"><a class="nav-link" href="{{ route('admin.jobs.index') }}"><i class="fas fa-briefcase"></i> <span>Publicación de Empleo</span></a></li>
             @endif
-
+            <!-- @if (canAccess(['menu builder'])) -->
+            <li class="{{ setSidebarActive(['admin.user.*']) }}"><a class="nav-link" href="{{ route('admin.users.index') }}"><i class="fas fa-user"></i> <span>Usuarios</span></a></li>
+            <!-- @endif -->
 
             @if (canAccess(['job attributes']))
 

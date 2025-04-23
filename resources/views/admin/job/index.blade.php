@@ -3,14 +3,14 @@
 @section('contents')
 <section class="section">
     <div class="section-header">
-        <h1>Job Posts</h1>
+        <h1>Vacantes</h1>
     </div>
 
     <div class="section-body">
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4>Vacantes</h4>
+                    <h4>Lista De Vacantes</h4>
                     <div class="card-header-form">
                         <form action="{{ route('admin.jobs.index') }}" method="GET">
                             <div class="input-group">
@@ -72,11 +72,11 @@
                                     <td>{{ formatDate($job->deadline) }}</td>
                                     <td>
                                         @if ($job->status === 'pending')
-                                        <span class="badge bg-warning text-dark">Peinding</span>
+                                        <span class="badge bg-warning text-dark">Pendiente</span>
                                         @elseif($job->deadline > date('Y-m-d'))
-                                        <span class="badge bg-primary text-dark">Active</span>
+                                        <span class="badge bg-primary text-dark">Activo</span>
                                         @else
-                                        <span class="badge bg-danger text-dark">Expired</span>
+                                        <span class="badge bg-danger text-dark">Expirado</span>
                                         @endif
                                     </td>
                                     <td>
