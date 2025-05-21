@@ -128,18 +128,18 @@
                 <div class="sidebar-shadow none-shadow mb-30">
                     <div class="sidebar-filters">
                         <div class="filter-block head-border mb-30">
-                            <h5>Advance Filter <a class="link-reset" href="#">Reset</a></h5>
+                            <h5>Filtro Avanzado <a class="link-reset" href="#">Reset</a></h5>
                         </div>
                         <form action="{{ route('jobs.index') }}" method="GET">
                             <div class="filter-block mb-20">
                                 <div class="form-group ">
-                                    <input type="text" value="{{ request()?->search }}" class="form-control" name="search" placeholder="Search">
+                                    <input type="text" value="{{ request()?->search }}" class="form-control" name="search" placeholder="Buscar">
                                 </div>
                             </div>
                             <div class="filter-block mb-20">
                                 <div class="form-group select-style">
                                     <select name="country" class="form-control country form-icons select-active">
-                                        <option value="">Country</option>
+                                        <option value="">País</option>
                                         <option value="">All</option>
                                         @foreach ($countries as $country)
                                         <option @selected(request()?->country == $country->id) value="{{ $country->id }}">{{ $country->name }}</option>
@@ -157,7 +157,7 @@
                                         <option @selected($state->id == request()->state) value="{{ $state->id }}" >{{ $state->name }}</option>
                                         @endforeach
                                         @else
-                                        <option value="">State</option>
+                                        <option value="">Departamento</option>
                                         @endif
                                     </select>
                                 </div>
@@ -166,24 +166,24 @@
                                 <div class="form-group select-style">
                                     <select name="city" class="form-control city form-icons select-active">
                                         @if ($selectedCites)
-                                        <option value="">All</option>
+                                        <option value="">Todo</option>
 
                                         @foreach ($selectedCites as $city)
                                         <option @selected($city->id == request()->city) value="{{ $city->id }}" >{{ $city->name }}</option>
                                         @endforeach
                                         @else
-                                        <option value="">City</option>
+                                        <option value="">Ciudad</option>
                                         @endif
                                     </select>
                                     <button class="submit btn btn-default mt-10 rounded-1 w-100"
-                                        type="submit">Search</button>
+                                        type="submit">Buscar</button>
                                 </div>
                             </div>
                         </form>
 
                         <form action="{{ route('jobs.index') }}" method="GET">
                             <div class="filter-block mb-20">
-                                <h5 class="medium-heading mb-15">Categoires</h5>
+                                <h5 class="medium-heading mb-15">Categorias</h5>
                                 <div class="form-group">
                                     <ul class="list-checkbox">
                                         @foreach ($jobCategories as $category)
@@ -199,7 +199,7 @@
                                 </div>
                             </div>
                             <div class="filter-block mb-20">
-                                <h5 class="medium-heading mb-25">Salary Range</h5>
+                                <h5 class="medium-heading mb-25">Rango Salarial</h5>
                                 <div class="list-checkbox pb-20">
                                     <div class="row position-relative mt-10 mb-20">
                                         <div class="col-sm-12 box-slider-range">
@@ -224,7 +224,7 @@
                             </div>
 
                             <div class="filter-block mb-20">
-                                <h5 class="medium-heading mb-15">Job type</h5>
+                                <h5 class="medium-heading mb-15">Tipo</h5>
                                 <div class="form-group">
                                     <ul class="list-checkbox">
                                         @foreach ($jobTypes as $jobType)
@@ -240,7 +240,7 @@
                                 </div>
                             </div>
                             <button class="submit btn btn-default mt-10 rounded-1 w-100"
-                                type="submit">Search</button>
+                                type="submit">Buscar</button>
                         </form>
 
 

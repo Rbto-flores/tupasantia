@@ -54,7 +54,7 @@
           </div>
         </div>
         <div class="box-related-job content-page" id="open-positions">
-          <h5 class="mb-30">Open Jobs</h5>
+          <h5 class="mb-30">Vacantes Abiertas</h5>
           <div class="box-list-jobs display-list">
             @forelse ($openJobs as $job)
             <div class="col-xl-12 col-md-4">

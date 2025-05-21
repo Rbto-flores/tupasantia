@@ -10,7 +10,13 @@ class JobLocation extends Model
 {
     use HasFactory;
 
-    function country() : BelongsTo {
+    function country(): BelongsTo
+    {
         return $this->belongsTo(Country::class);
+    }
+
+    function state(): BelongsTo
+    {
+        return $this->belongsTo(State::class);
     }
 }
