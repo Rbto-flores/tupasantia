@@ -15,12 +15,12 @@
                     </a>
                     <div class="informations">
                         <a href="{{ route('companies.index', ['country' => $location->country_id]) }}">
-                            <h5>{{ $location->country->name }}</h5>
+                            <h5>{{ $location->state->name }}</h5>
                         </a>
                         <div class="row">
                             <div class="col-lg-6 col-6"><span
                                     class="text-14 color-text-paragraph-2">{{ $location->country->companies->count() }}
-                                    companies</span></div>
+                                    Empresas</span></div>
                             <div class="col-lg-6 col-6 text-end"><span
                                     class="color-text-paragraph-2 text-14"></span>
                             </div>

@@ -58,7 +58,7 @@
         <div class="sidebar-shadow none-shadow mb-30">
           <div class="sidebar-filters">
             <div class="filter-block head-border mb-30">
-              <h5>Advance Filter <a class="link-reset" href="#">Reset</a></h5>
+              <h5>Filtro Avanzado <a class="link-reset" href="#">Reset</a></h5>
             </div>
 
             <form action="{{ route('companies.index') }}" method="GET">

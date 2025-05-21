@@ -141,7 +141,7 @@
                                         <div class="col-2">
                                             <div class="form-group">
                                                 <input @checked($job->salary_mode === 'range') onclick="salaryModeChnage('salary_range')" type="radio" id="salary_range" class="from-control {{ hasError($errors, 'salary_mode') }}" name="salary_mode" value="range">
-                                                <label for="salary_range">Salary Range </label>
+                                                <label for="salary_range">Rango Salarial </label>
                                                 <x-input-error :messages="$errors->get('salary_mode')" class="mt-2" />
                                             </div>
                                         </div>

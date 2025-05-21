@@ -130,7 +130,7 @@
               <div class="sidebar-info"><span class="sidebar-company">{{ $job->company->name }}</span><span
                   class="card-location">{{ formatLocation($job->company->companyCountry->name, $job->company->companyState->name) }}</span>
                 @if ($openJobs > 0)
-                <a class="link-underline mt-15" href="{{route('companies.show', $job->company->slug)}}">{{ $openJobs }} Open Jobs</a>
+                <a class="link-underline mt-15" href="{{route('companies.show', $job->company->slug)}}">{{ $openJobs }} Vacantes Abiertas</a>
                 @endif
               </div>
             </div>

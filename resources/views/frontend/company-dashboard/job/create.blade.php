@@ -137,7 +137,7 @@
                                                 <div class="form-group d-flex">
                                                     <input style="height: 18px;width: 18px;" onclick="salaryModeChnage('salary_range')" type="radio" id="salary_range" class="from-control {{ hasError($errors, 'salary_mode') }}" name="salary_mode" checked value="range">
                                                     <label style="margin-left: 5px;
-                                                    margin-top: -4px;" for="salary_range">Salary Range </label>
+                                                    margin-top: -4px;" for="salary_range">Rango Salarial </label>
                                                     <x-input-error :messages="$errors->get('salary_mode')" class="mt-2" />
                                                 </div>
                                             </div>

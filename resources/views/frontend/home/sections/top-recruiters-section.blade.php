@@ -21,7 +21,7 @@
                                     </div>
                                     <div class="text-info-bottom mt-5"><span
                                             class="font-xs color-text-mutted icon-location">{{ $company->companyCountry->name }}</span><span class="font-xs color-text-mutted float-end mt-5">{{ $company->jobs_count }} <span>
-                                                Open Jobs</span></span></div>
+                                                Vacantes Abiertas</span></span></div>
                                 </div>
                             </a>
                         </div>

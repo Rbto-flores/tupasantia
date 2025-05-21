@@ -19,7 +19,7 @@
                   </div>
                   <div class="text-info-right">
                     <h4>{{ Str::limit($category->name, 20, '...') }}</h4>
-                    <p class="font-xs">{{ $category->jobs_count }}<span> Jobs Available</span></p>
+                    <p class="font-xs">{{ $category->jobs_count }}<span> Vacantes Abiertas</span></p>
                   </div>
                 </div>
               </a>
