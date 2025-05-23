@@ -36,8 +36,7 @@
 
             <footer class="main-footer">
                 <div class="footer-left">
-                    Copyright &copy; {{ date('Y') }} <div class="bullet"></div> Design By <a
-                        href="www.websolutionus.com">websolutionus</a>
+                    Copyright &copy; {{ date('Y') }} rflores
                 </div>
                 <div class="footer-right">
 
@@ -71,10 +70,10 @@
 
     <script>
         ClassicEditor
-        .create( document.querySelector( '#editor' ) )
-        .catch( error => {
-            console.error( error );
-        } );
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
 
         $(".delete-item").on('click', function(e) {
             e.preventDefault();
@@ -93,7 +92,9 @@
                         $.ajax({
                             method: 'DELETE',
                             url: url,
-                            data: {_token: "{{ csrf_token() }}"},
+                            data: {
+                                _token: "{{ csrf_token() }}"
+                            },
                             success: function(response) {
                                 window.location.reload();
                             },

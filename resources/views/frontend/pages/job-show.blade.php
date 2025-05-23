@@ -9,7 +9,7 @@
           <h2 class="mb-20">Detalles de la vacante</h2>
           <ul class="breadcrumbs">
             <li><a class="home-icon" href="index.html">Home</a></li>
-            <li>job Detatils</li>
+            <li>Detalles de la Vacantes</li>
           </ul>
         </div>
       </div>

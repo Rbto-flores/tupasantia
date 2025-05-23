@@ -213,7 +213,7 @@
 
                                     <div class="col-md-6">
                                         <div class="form-group select-style">
-                                            <label for="">Job Type <span class="text-danger ">*</span></label>
+                                            <label for="">Tipo de vacante <span class="text-danger ">*</span></label>
                                             <select name="job_type" id="" class="form-control form-icons select-active {{ hasError($errors, 'job_type') }}">
                                                 <option value="">Seleccionar</option>
                                                 @foreach ($jobTypes as $jobType)
