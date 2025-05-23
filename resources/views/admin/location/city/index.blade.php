@@ -3,34 +3,34 @@
 @section('contents')
 <section class="section">
     <div class="section-header">
-        <h1>Cities</h1>
+        <h1>Ciudades</h1>
     </div>
 
     <div class="section-body">
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4>All Cities</h4>
+                    <h4>Todas las Ciudades</h4>
                     <div class="card-header-form">
                         <form action="{{ route('admin.cities.index') }}" method="GET">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search" name="search" value="{{ request('search') }}">
+                                <input type="text" class="form-control" placeholder="Buscar" name="search" value="{{ request('search') }}">
                                 <div class="input-group-btn">
                                     <button type="submit" style="height: 40px;" class="btn btn-primary"><i class="fas fa-search"></i></button>
                                 </div>
                             </div>
                         </form>
                     </div>
-                    <a href="{{ route('admin.cities.create') }}" class="btn btn-primary"> <i class="fas fa-plus-circle"></i> Create new</a>
+                    <a href="{{ route('admin.cities.create') }}" class="btn btn-primary"> <i class="fas fa-plus-circle"></i> Crear nueva</a>
                 </div>
                 <div class="card-body p-0">
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <tr>
-                                <th>City</th>
-                                <th>State</th>
-                                <th>Country</th>
-                                <th style="width: 10%">Action</th>
+                                <th>Ciudad</th>
+                                <th>Estado</th>
+                                <th>País</th>
+                                <th style="width: 10%">Acción</th>
                             </tr>
                             <tbody>
                                 @forelse ($cities as $city)

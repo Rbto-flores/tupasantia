@@ -3,7 +3,7 @@
 @section('contents')
 <section class="section">
     <div class="section-header">
-        <h1>Update Job Post</h1>
+        <h1>Actualizar Vacante</h1>
     </div>
 
     <div class="section-body">
@@ -239,7 +239,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="">Job Type <span class="text-danger ">*</span></label>
+                                        <label for="">Tipo de vacante <span class="text-danger ">*</span></label>
                                         <select name="job_type" id="" class="form-control select2 {{ hasError($errors, 'job_type') }}">
                                             <option value="">Choose</option>
                                             @foreach ($jobTypes as $jobType)

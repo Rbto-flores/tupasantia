@@ -1,26 +1,26 @@
 @extends('admin.layouts.master')
 
 @section('contents')
-    <section class="section">
-        <div class="section-header">
-            <h1>Menu Builder</h1>
-        </div>
+<section class="section">
+    <div class="section-header">
+        <h1>Constructor de Menú</h1>
+    </div>
 
-        <div class="section-body">
-            <div class="col-12">
-                <div class="card">
+    <div class="section-body">
+        <div class="col-12">
+            <div class="card">
 
-                    <div class="card-body p-0">
-                        {!! Menu::render() !!}
-                    </div>
-
+                <div class="card-body p-0">
+                    {!! Menu::render() !!}
                 </div>
+
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 @endsection
 
 @push('scripts')
-    {!! Menu::scripts() !!}
+{!! Menu::scripts() !!}
 @endpush

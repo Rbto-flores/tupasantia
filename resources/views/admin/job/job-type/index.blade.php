@@ -3,7 +3,7 @@
 @section('contents')
 <section class="section">
     <div class="section-header">
-        <h1>Job Type</h1>
+        <h1>Tipo de vacante</h1>
     </div>
 
     <div class="section-body">

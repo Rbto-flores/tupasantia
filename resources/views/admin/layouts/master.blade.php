@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>General Dashboard &mdash; Stisla</title>
+    <title>Panel de Control</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="{{ asset('admin/assets/modules/bootstrap/css/bootstrap.min.css') }}">
@@ -36,8 +36,7 @@
 
             <footer class="main-footer">
                 <div class="footer-left">
-                    Copyright &copy; {{ date('Y') }} <div class="bullet"></div> Design By <a
-                        href="www.websolutionus.com">websolutionus</a>
+                    Copyright &copy; {{ date('Y') }} rflores
                 </div>
                 <div class="footer-right">
 
@@ -71,17 +70,17 @@
 
     <script>
         ClassicEditor
-        .create( document.querySelector( '#editor' ) )
-        .catch( error => {
-            console.error( error );
-        } );
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
 
         $(".delete-item").on('click', function(e) {
             e.preventDefault();
 
             swal({
-                    title: 'Are you sure?',
-                    text: 'Once deleted, you will not be able to recover this data!',
+                    title: '¿Estás seguro?',
+                    text: '¡Una vez eliminado, no podrás recuperar estos datos!',
                     icon: 'warning',
                     buttons: true,
                     dangerMode: true,
@@ -93,7 +92,9 @@
                         $.ajax({
                             method: 'DELETE',
                             url: url,
-                            data: {_token: "{{ csrf_token() }}"},
+                            data: {
+                                _token: "{{ csrf_token() }}"
+                            },
                             success: function(response) {
                                 window.location.reload();
                             },
