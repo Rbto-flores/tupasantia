@@ -60,7 +60,7 @@
             @endif
 
             @if (canAccess(['job category create', 'job category update', 'job category delete']))
-            <li class="{{ setSidebarActive(['admin.job-categories.*']) }}"><a class="nav-link" href="{{ route('admin.job-categories.index') }}"><i class="fas fa-list"></i> <span>Categoría de Trabajo</span></a></li>
+            <li class="{{ setSidebarActive(['admin.job-categories.*']) }}"><a class="nav-link" href="{{ route('admin.job-categories.index') }}"><i class="fas fa-list"></i> <span>Categoría de vacante</span></a></li>
             @endif
 
             @if (canAccess(['job create', 'job update', 'job delete']))

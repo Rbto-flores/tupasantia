@@ -210,19 +210,7 @@
 
 
 
-                                    <div class="col-md-6">
-                                        <div class="form-group select-style">
-                                            <label for="">Education <span class="text-danger ">*</span></label>
-                                            <select name="education" id="" class="form-control form-icons select-active {{ hasError($errors, 'education') }}">
-                                                <option value="">Seleccionar</option>
-                                                @foreach ($educations as $education)
-                                                <option value="{{ $education->id }}">{{ $education->name }}</option>
 
-                                                @endforeach
-                                            </select>
-                                            <x-input-error :messages="$errors->get('education')" class="mt-2" />
-                                        </div>
-                                    </div>
                                     <div class="col-md-6">
                                         <div class="form-group select-style">
                                             <label for="">Job Type <span class="text-danger ">*</span></label>

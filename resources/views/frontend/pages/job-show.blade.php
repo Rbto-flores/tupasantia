@@ -32,9 +32,9 @@
       </div>
       <div class="col-lg-4 col-md-12 text-lg-end">
         @if ($alreadyApplied)
-        <div class="btn btn-apply-icon btn-apply btn-apply-big hover-up apply-now" style="background-color:#8d8c8c">Applied</div>
+        <div class="btn btn-apply-icon btn-apply btn-apply-big hover-up apply-now" style="background-color:#8d8c8c">Solicitado</div>
         @else
-        <div class="btn btn-apply-icon btn-apply btn-apply-big hover-up apply-now">Apply now</div>
+        <div class="btn btn-apply-icon btn-apply btn-apply-big hover-up apply-now">Solicitar Ahora</div>
         @endif
       </div>
     </div>

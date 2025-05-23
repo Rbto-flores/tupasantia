@@ -94,7 +94,7 @@ class jobController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(JobCreateRequest $request): RedirectResponse
+    public function store(Request $request): RedirectResponse
     {
         $userPlan = session('user_plan');
 
@@ -131,12 +131,12 @@ class jobController extends Controller
         $job->min_salary = $request->min_salary;
         $job->max_salary = $request->max_salary;
         $job->custom_salary = $request->custom_salary;
-        $job->salary_type_id = $request->salary_type;
-        $job->education_id = $request->education;
+        $job->salary_type_id = 1;
         $job->job_type_id = $request->job_type;
         $job->featured = $request->featured;
         $job->highlight = $request->highlight;
         $job->description = $request->description;
+        $job->education_id = 2;
         $job->save();
 
         // insert tags

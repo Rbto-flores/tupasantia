@@ -1,22 +1,22 @@
 <div class="tab-pane fade show" id="pills-experience" role="tabpanel" aria-labelledby="pills-experience-tab">
-<div>
-    <div class="d-flex justify-content-between">
-        <h4>Experience</h4>
-        <button class="btn btn-primary" onclick="$('#ExperienceForm').trigger('reset'); editId = ''; editMode=false" data-bs-toggle="modal" data-bs-target="#experienceModal">Add Experience</button>
-    </div>
-    <br>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Company</th>
-                <th>Depertment</th>
-                <th>Designation</th>
-                <th>Period</th>
-                <th style="width: 15%">Action</th>
-            </tr>
-        </thead>
-        <tbody class="experience-tbody">
-            @forelse ($candidateExperiences as $experience)
+    <div>
+        <div class="d-flex justify-content-between">
+            <h4>Experiencia</h4>
+            <button class="btn btn-primary" onclick="$('#ExperienceForm').trigger('reset'); editId = ''; editMode=false" data-bs-toggle="modal" data-bs-target="#experienceModal">Agregar Experiencia</button>
+        </div>
+        <br>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Empresa</th>
+                    <th>Departamento</th>
+                    <th>Cargo</th>
+                    <th>Período</th>
+                    <th style="width: 15%">Acción</th>
+                </tr>
+            </thead>
+            <tbody class="experience-tbody">
+                @forelse ($candidateExperiences as $experience)
                 <tr>
                     <td>{{ $experience->company }}</td>
                     <td>{{ $experience->department }}</td>
@@ -29,35 +29,35 @@
                     </td>
 
                 </tr>
-            @empty
+                @empty
                 <tr>
-                    <td colspan="5" class="text-center">No Data Found</td>
+                    <td colspan="5" class="text-center">No se encontraron datos</td>
                 </tr>
-            @endforelse
+                @endforelse
 
 
-        </tbody>
-    </table>
-</div>
-<br>
-<br>
-<div>
-    <div class="d-flex justify-content-between">
-        <h4>Education</h4>
-        <button class="btn btn-primary" onclick="$('#EducationForm').trigger('reset'); editId = ''; editMode=false" data-bs-toggle="modal" data-bs-target="#educationModal">Add Eduction</button>
+            </tbody>
+        </table>
     </div>
     <br>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Lavel</th>
-                <th>Degree</th>
-                <th>Year</th>
-                <th style="width: 15%">Action</th>
-            </tr>
-        </thead>
-        <tbody class="education-tbody">
-            @forelse ($candidateEducation as $education)
+    <br>
+    <div>
+        <div class="d-flex justify-content-between">
+            <h4>Educación</h4>
+            <button class="btn btn-primary" onclick="$('#EducationForm').trigger('reset'); editId = ''; editMode=false" data-bs-toggle="modal" data-bs-target="#educationModal">Agregar Educación</button>
+        </div>
+        <br>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nivel</th>
+                    <th>Título</th>
+                    <th>Año</th>
+                    <th style="width: 15%">Acción</th>
+                </tr>
+            </thead>
+            <tbody class="education-tbody">
+                @forelse ($candidateEducation as $education)
                 <tr>
                     <td>{{ $education->level }}</td>
                     <td>{{ $education->degree }}</td>
@@ -69,18 +69,15 @@
                     </td>
 
                 </tr>
-            @empty
+                @empty
                 <tr>
-                    <td colspan="5" class="text-center">No Data Found</td>
+                    <td colspan="5" class="text-center">No se encontraron datos</td>
                 </tr>
-            @endforelse
+                @endforelse
 
 
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+    </div>
+
 </div>
-
-</div>
-
-
-
