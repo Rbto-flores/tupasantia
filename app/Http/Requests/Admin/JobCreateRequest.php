@@ -27,8 +27,6 @@ class JobCreateRequest extends FormRequest
             'min_salary' => ['nullable', 'numeric'],
             'max_salary' => ['nullable', 'numeric'],
             'custom_salary' => ['nullable', 'string', 'max:255'],
-            'salary_type' => ['required', 'integer'],
-            'education' => ['required', 'integer'],
             'job_type' => ['required', 'integer'],
             'tags' => ['required'],
             'benefits' => ['required'],

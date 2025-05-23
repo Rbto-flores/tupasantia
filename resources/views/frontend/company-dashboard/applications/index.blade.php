@@ -6,10 +6,10 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
-                    <h2 class="mb-20">Applications</h2>
+                    <h2 class="mb-20">Applicantes</h2>
                     <ul class="breadcrumbs">
                         <li><a class="home-icon" href="index.html">Home</a></li>
-                        <li>Applications</li>
+                        <li>Applicantes</li>
                     </ul>
                 </div>
             </div>
@@ -31,9 +31,9 @@
                         <div class="table-responsive">
                             <table class="table table-striped">
                                 <tr>
-                                    <th>Details</th>
-                                    <th>Experience</th>
-                                    <th style="width: 20%">Action</th>
+                                    <th>Detalles</th>
+                                    <th>Experiencia</th>
+                                    <th style="width: 20%">Acción</th>
                                 </tr>
                                 <tbody>
                                     @forelse ($applications as $application)
@@ -52,13 +52,13 @@
                                         </td>
 
                                         <td>
-                                            <a href="{{ route('candidates.show', $application->candidate->slug) }}" class="btn btn-primary">View Profile</a>
+                                            <a href="{{ route('candidates.show', $application->candidate->slug) }}" class="btn btn-primary">Ver perfil</a>
                                         </td>
 
                                     </tr>
                                     @empty
                                     <tr>
-                                        <td colspan="3" class="text-center">No result found!</td>
+                                        <td colspan="3" class="text-center">Sin resultados</td>
                                     </tr>
                                     @endforelse
 

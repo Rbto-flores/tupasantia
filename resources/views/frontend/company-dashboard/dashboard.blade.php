@@ -71,22 +71,22 @@
                                     <tbody>
                                         <tr>
                                             <th scope="row">•</th>
-                                            <td><b>Current Package</b></td>
-                                            <td>{{ $userPlan?->plan?->label }} Package</td>
+                                            <td><b>Plan Actual</b></td>
+                                            <td>Plan {{ $userPlan?->plan?->label }}</td>
                                         </tr>
                                         <tr>
                                             <th scope="row">•</th>
-                                            <td>Job Post Available</td>
+                                            <td>Públicacion disponibles</td>
                                             <td>{{ $userPlan?->job_limit }}</td>
                                         </tr>
                                         <tr>
                                             <th scope="row">•</th>
-                                            <td>Featured Post Available</td>
+                                            <td>Públicaciones destacadas disponibles</td>
                                             <td>{{ $userPlan?->featured_job_limit }}</td>
                                         </tr>
                                         <tr>
                                             <th scope="row">•</th>
-                                            <td>Highlight Post Available</td>
+                                            <td>Públicacion promocionadas</td>
                                             <td>{{ $userPlan?->highlight_job_limit }}</td>
                                         </tr>
                                     </tbody>

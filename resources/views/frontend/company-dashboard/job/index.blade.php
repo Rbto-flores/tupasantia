@@ -103,7 +103,7 @@
                                     </tr>
                                     @empty
                                     <tr>
-                                        <td colspan="3" class="text-center">No result found!</td>
+                                        <td colspan="3" class="text-center">Sin resultados</td>
                                     </tr>
                                     @endforelse
 

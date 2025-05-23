@@ -28,7 +28,7 @@
 
           <div class="text-center">
             <h2 class="mb-5 text-brand-1">Login</h2>
-            <p class="font-sm text-muted mb-30">Please provide your valid cradentials.</p>
+
           </div>
           <form class="login-register text-start mt-20" method="POST" action="{{ route('login') }}">
             @csrf
@@ -47,7 +47,7 @@
                 <div class="form-group">
                   <div class="d-flex justify-content-between">
                     <label class="form-label" for="input-4">Password *</label>
-                    <a href="{{ route('password.request') }}">forgot password?</a>
+                    <a href="{{ route('password.request') }}">Olvide mi contraseña</a>
                   </div>
                   <input class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}" id="input-4" type="password" required="" name="password"
                     placeholder="************">
@@ -59,7 +59,7 @@
               <div class="col-xl-12">
                 <div class="form-check form-group form-check-inline">
                   <input class="form-check-input" style="margin-right: 10px" type="checkbox" name="remember">
-                  <label class="form-check-label" for="typeCandidate"> Remember me</label>
+                  <label class="form-check-label" for="typeCandidate"> Recuerdame</label>
                 </div>
               </div>
 
@@ -67,8 +67,8 @@
             <div class="form-group">
               <button class="btn btn-default hover-up w-100" type="submit" name="login">Login</button>
             </div>
-            <div class="text-muted text-center">Don't have an account?
-              <a href="{{ route('register') }}">Registration</a>
+            <div class="text-muted text-center">No tienes cuenta?
+              <a href="{{ route('register') }}">Registrate</a>
             </div>
           </form>
           {{-- <div class="text-center mt-20">
