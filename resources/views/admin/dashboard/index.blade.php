@@ -3,7 +3,7 @@
 @section('contents')
 <section class="section">
   <div class="section-header">
-    <h1>Dashboard</h1>
+    <h1>Panel de Control</h1>
   </div>
   @if (canAccess(['dashboard analytics']))
   <div class="row">
@@ -59,7 +59,7 @@
         </div>
         <div class="card-wrap">
           <div class="card-header">
-            <h4>Vacantes publicadas</h4>
+            <h4>Vacantes Publicadas</h4>
           </div>
           <div class="card-body">
             {{ $totalJobs }}
@@ -74,7 +74,7 @@
         </div>
         <div class="card-wrap">
           <div class="card-header">
-            <h4>Vacantes activas</h4>
+            <h4>Vacantes Activas</h4>
           </div>
           <div class="card-body">
             {{ $activeJobs }}
@@ -89,7 +89,7 @@
         </div>
         <div class="card-wrap">
           <div class="card-header">
-            <h4>Vacantes expiradas</h4>
+            <h4>Vacantes Expiradas</h4>
           </div>
           <div class="card-body">
             {{ $expiredJobs }}
@@ -104,7 +104,7 @@
         </div>
         <div class="card-wrap">
           <div class="card-header">
-            <h4>Vacantes pendientes de aprobación</h4>
+            <h4>Vacantes Pendientes</h4>
           </div>
           <div class="card-body">
             {{ $pendingJobs }}
@@ -119,7 +119,7 @@
         </div>
         <div class="card-wrap">
           <div class="card-header">
-            <h4>Entradas del blog</h4>
+            <h4>Entradas del Blog</h4>
           </div>
           <div class="card-body">
             {{ $totalBlogs }}
@@ -134,31 +134,29 @@
   <div class="col-12">
     <div class="card">
       <div class="card-header">
-        <h4>Vacantes pendientes de aprobación</h4>
+        <h4>Vacantes Pendientes de Aprobación</h4>
         <div class="card-header-form">
           <form action="{{ route('admin.jobs.index') }}" method="GET">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search" name="search" value="{{ request('search') }}">
+              <input type="text" class="form-control" placeholder="Buscar" name="search" value="{{ request('search') }}">
               <div class="input-group-btn">
                 <button type="submit" style="height: 40px;" class="btn btn-primary"><i class="fas fa-search"></i></button>
               </div>
             </div>
           </form>
         </div>
-
       </div>
       <div class="card-body p-0">
         <div class="table-responsive">
           <table class="table table-striped">
             <tr>
-              <th>Vacantes</th>
-              <th>Categoria/ Posición</th>
+              <th>Vacante</th>
+              <th>Categoría/Posición</th>
               <th>Salario</th>
-              <th>Fecha final</th>
+              <th>Fecha Límite</th>
               <th>Estado</th>
               <th>Aprobado</th>
-
-              <th style="width: 10%">Action</th>
+              <th style="width: 10%">Acciones</th>
             </tr>
             <tbody>
               @forelse ($jobs as $job)
@@ -190,17 +188,16 @@
                   <b>{{ $job->custom_salary }}</b>
                   <br>
                   <span>{{ $job->salaryType->name }}</span>
-
                   @endif
                 </td>
                 <td>{{ formatDate($job->deadline) }}</td>
                 <td>
                   @if ($job->status === 'pending')
-                  <span class="badge bg-warning text-dark">Peinding</span>
+                  <span class="badge bg-warning text-dark">Pendiente</span>
                   @elseif($job->deadline > date('Y-m-d'))
-                  <span class="badge bg-primary text-dark">Active</span>
+                  <span class="badge bg-primary text-dark">Activo</span>
                   @else
-                  <span class="badge bg-danger text-dark">Expired</span>
+                  <span class="badge bg-danger text-dark">Expirado</span>
                   @endif
                 </td>
                 <td>
@@ -218,12 +215,10 @@
               </tr>
               @empty
               <tr>
-                <td colspan="7" class="text-center">No se encontraron resultado!</td>
+                <td colspan="7" class="text-center">No se encontraron resultados</td>
               </tr>
               @endforelse
-
             </tbody>
-
           </table>
         </div>
       </div>
@@ -237,7 +232,6 @@
     </div>
   </div>
   @endif
-
 </section>
 @endsection
 

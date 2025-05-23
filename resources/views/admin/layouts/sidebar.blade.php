@@ -48,10 +48,10 @@
             <a href="index.html">St</a>
         </div>
         <ul class="sidebar-menu">
-            <li class="menu-header">Panel de control</li>
+            <li class="menu-header">Panel de Control</li>
 
             <li class="{{ setSidebarActive(['admin.dashboard']) }}">
-                <a href="{{ route('admin.dashboard') }}" class="nav-link"><i class="fas fa-fire"></i><span>Panel de control</span></a>
+                <a href="{{ route('admin.dashboard') }}" class="nav-link"><i class="fas fa-fire"></i><span>Panel de Control</span></a>
 
             </li>
             <li class="menu-header">Inicio</li>
@@ -60,11 +60,11 @@
             @endif
 
             @if (canAccess(['job category create', 'job category update', 'job category delete']))
-            <li class="{{ setSidebarActive(['admin.job-categories.*']) }}"><a class="nav-link" href="{{ route('admin.job-categories.index') }}"><i class="fas fa-list"></i> <span>Categoría de vacante</span></a></li>
+            <li class="{{ setSidebarActive(['admin.job-categories.*']) }}"><a class="nav-link" href="{{ route('admin.job-categories.index') }}"><i class="fas fa-list"></i> <span>Categorías de Vacantes</span></a></li>
             @endif
 
             @if (canAccess(['job create', 'job update', 'job delete']))
-            <li class="{{ setSidebarActive(['admin.jobs.*']) }}"><a class="nav-link" href="{{ route('admin.jobs.index') }}"><i class="fas fa-briefcase"></i> <span>Publicación de Empleo</span></a></li>
+            <li class="{{ setSidebarActive(['admin.jobs.*']) }}"><a class="nav-link" href="{{ route('admin.jobs.index') }}"><i class="fas fa-briefcase"></i> <span>Publicaciones de Empleo</span></a></li>
             @endif
             <!-- @if (canAccess(['menu builder'])) -->
             <li class="{{ setSidebarActive(['admin.user.*']) }}"><a class="nav-link" href="{{ route('admin.users.index') }}"><i class="fas fa-user"></i> <span>Usuarios</span></a></li>
@@ -86,8 +86,8 @@
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i>
                     <span>Atributos</span></a>
                 <ul class="dropdown-menu">
-                    <li class="{{ setSidebarActive(['admin.industry-types.*']) }}"><a class="nav-link" href="{{ route('admin.industry-types.index') }}">Tipo de Industria</a></li>
-                    <li class="{{ setSidebarActive(['admin.organization-types.*']) }}"><a class="nav-link" href="{{ route('admin.organization-types.index') }}">Tipo de Organización</a></li>
+                    <li class="{{ setSidebarActive(['admin.industry-types.*']) }}"><a class="nav-link" href="{{ route('admin.industry-types.index') }}">Tipos de Industria</a></li>
+                    <li class="{{ setSidebarActive(['admin.organization-types.*']) }}"><a class="nav-link" href="{{ route('admin.organization-types.index') }}">Tipos de Organización</a></li>
 
                     <li class="{{ setSidebarActive(['admin.languages.*']) }}"><a class="nav-link" href="{{ route('admin.languages.index') }}">Idiomas</a></li>
 
@@ -143,7 +143,7 @@
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-file"></i>
                     <span>Páginas</span></a>
                 <ul class="dropdown-menu">
-                    <li class="{{ setSidebarActive(['admin.about-us.*']) }}"><a class="nav-link" href="{{ route('admin.about-us.index') }}">Sobre nosotros</a></li>
+                    <li class="{{ setSidebarActive(['admin.about-us.*']) }}"><a class="nav-link" href="{{ route('admin.about-us.index') }}">Sobre Nosotros</a></li>
                     <li class="{{ setSidebarActive(['admin.page-builder.*']) }}"><a class="nav-link" href="{{ route('admin.page-builder.index') }}">Constructor de Páginas</a></li>
 
                 </ul>
@@ -166,7 +166,7 @@
             <li class="{{ setSidebarActive(['admin.blogs.*']) }}"><a class="nav-link" href="{{ route('admin.blogs.index') }}"><i class="fab fa-blogger-b"></i> <span>Blogs</span></a></li>
             @endif
             @if (canAccess(['price plan']))
-            <li class="{{ setSidebarActive(['admin.plans.*']) }}"><a class="nav-link" href="{{ route('admin.plans.index') }}"><i class="fas fa-box"></i> <span>Plan de Precios</span></a></li>
+            <li class="{{ setSidebarActive(['admin.plans.*']) }}"><a class="nav-link" href="{{ route('admin.plans.index') }}"><i class="fas fa-box"></i> <span>Planes de Precios</span></a></li>
             @endif
 
             @if (canAccess(['news letter']))
@@ -189,7 +189,7 @@
             @endif
 
             @if (canAccess(['payment settings']))
-            <li class="{{ setSidebarActive(['admin.payment-settings.index']) }}"><a class="nav-link" href="{{ route('admin.payment-settings.index') }}"><i class="fas fa-wrench"></i> <span>Configuración de Pago</span></a></li>
+            <li class="{{ setSidebarActive(['admin.payment-settings.index']) }}"><a class="nav-link" href="{{ route('admin.payment-settings.index') }}"><i class="fas fa-wrench"></i> <span>Configuración de Pagos</span></a></li>
             @endif
 
             @if (canAccess(['site settings']))

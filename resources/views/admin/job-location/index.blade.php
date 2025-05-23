@@ -3,14 +3,14 @@
 @section('contents')
 <section class="section">
     <div class="section-header">
-        <h1>Job Locations</h1>
+        <h1>Locaciones</h1>
     </div>
 
     <div class="section-body">
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4>All Locations</h4>
+                    <h4>Locaciones</h4>
                     <div class="card-header-form">
 
                     </div>
@@ -20,8 +20,8 @@
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <tr>
-                                <th>image</th>
-                                <th>location</th>
+                                <th>imagen</th>
+                                <th>locacion</th>
                                 <th>status</th>
                                 <th style="width: 10%">Action</th>
                             </tr>

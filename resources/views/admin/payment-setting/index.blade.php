@@ -3,14 +3,14 @@
 @section('contents')
 <section class="section">
   <div class="section-header">
-    <h1>Payment Gateway Settings</h1>
+    <h1>Configuración de Pasarelas de Pago</h1>
   </div>
 
   <div class="section-body">
     <div class="col-12">
       <div class="card">
         <div class="card-header">
-          <h4>All Gateway Settings</h4>
+          <h4>Configuración de Todas las Pasarelas</h4>
         </div>
         <div class="card-body">
           <div class="row">

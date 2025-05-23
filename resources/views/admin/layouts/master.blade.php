@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>General Dashboard &mdash; Stisla</title>
+    <title>Panel de Control</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="{{ asset('admin/assets/modules/bootstrap/css/bootstrap.min.css') }}">
@@ -79,8 +79,8 @@
             e.preventDefault();
 
             swal({
-                    title: 'Are you sure?',
-                    text: 'Once deleted, you will not be able to recover this data!',
+                    title: '¿Estás seguro?',
+                    text: '¡Una vez eliminado, no podrás recuperar estos datos!',
                     icon: 'warning',
                     buttons: true,
                     dangerMode: true,
